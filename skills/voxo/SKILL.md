@@ -6,7 +6,7 @@ compatibility: Needs network access to the VOXO API and a VOXO_API_KEY. Bundled 
 metadata:
   author: VOXO
   version: "1.0"
-  homepage: https://speech-app.mvpro.lt
+  homepage: https://voxo.now
 ---
 
 # VOXO — speech for agents
@@ -27,10 +27,10 @@ Set the API key once in the environment (both paths read it):
 
 ```bash
 export VOXO_API_KEY="amk_live_…"          # from the VOXO dashboard → API & MCP
-export VOXO_API_URL="https://speech-api.mvpro.lt"   # optional; this is the default
+export VOXO_API_URL="https://api.voxo.now"   # optional; this is the default
 ```
 
-MCP endpoint (streamable-http): `https://speech-mcp.mvpro.lt/mcp/` with header
+MCP endpoint (streamable-http): `https://mcp.voxo.now/mcp/` with header
 `Authorization: Bearer $VOXO_API_KEY`.
 
 ## Rules that will save you (read first)

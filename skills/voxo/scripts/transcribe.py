@@ -8,7 +8,7 @@ Stdlib only. Empty --language = auto-detect.
 """
 import os, sys, json, time, uuid, base64, argparse, urllib.request, urllib.error
 
-API = os.environ.get("VOXO_API_URL", "https://speech-api.mvpro.lt").rstrip("/")
+API = os.environ.get("VOXO_API_URL", "https://api.voxo.now").rstrip("/")
 KEY = os.environ.get("VOXO_API_KEY")
 MIME = {"wav": "audio/wav", "mp3": "audio/mpeg", "ogg": "audio/ogg", "m4a": "audio/mp4",
         "flac": "audio/flac", "webm": "audio/webm"}

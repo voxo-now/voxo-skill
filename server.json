@@ -10,7 +10,7 @@
   "remotes": [
     {
       "type": "streamable-http",
-      "url": "https://speech-mcp.mvpro.lt/mcp/",
+      "url": "https://mcp.voxo.now/mcp/",
       "headers": [
         {
           "name": "Authorization",

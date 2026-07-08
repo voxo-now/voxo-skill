@@ -7,7 +7,7 @@
 """
 import os, sys, json, time, uuid, argparse, urllib.request, urllib.error
 
-API = os.environ.get("VOXO_API_URL", "https://speech-api.mvpro.lt").rstrip("/")
+API = os.environ.get("VOXO_API_URL", "https://api.voxo.now").rstrip("/")
 KEY = os.environ.get("VOXO_API_KEY")
 
 

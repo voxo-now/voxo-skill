@@ -92,6 +92,25 @@ One audio file, speakers alternating. Each turn has its own voice + delivery.
   in one call). `language` empty = auto-detect. Returns transcript + timestamped segments.
 - **Script:** `python3 scripts/transcribe.py recording.mp3 --language en`
 
+## MCP tool map (full surface)
+
+The 4 workflows above cover the common cases. The full MCP surface is **24 tools** — reach for
+these when the user asks for operational actions (list jobs, cancel a job, check the credit
+ledger, grab a voice sample, …), not just "make a voiceover". Names are bare; your client may
+list them namespaced (e.g. `VOXO:list_jobs`).
+
+| Area | Tools |
+|---|---|
+| **Generate (TTS)** | `estimate_generation`, `create_generation_job`, `create_dialogue_job` |
+| **Jobs** | `list_jobs`, `get_generation_job`, `wait_for_generation_job`, `cancel_generation_job`, `download_output` |
+| **Transcription** | `transcribe_file` (upload+transcribe+wait), `transcribe_audio` |
+| **Voices** | `list_voices`, `get_voice`, `get_voice_sample`, `create_voice`, `clone_voice`, `wait_for_voice`, `delete_voice` |
+| **Assets** | `upload_audio`, `upload_audio_from_url`, `list_assets` |
+| **Account** | `get_account`, `get_usage`, `get_credit_ledger`, `get_capabilities` |
+
+Discover the live surface for the connected account with `get_capabilities` (voices, languages,
+control tokens) and `get_account` (credits, verification) before anything paid.
+
 ## Delivery controls (brief — full catalog in references/controls.md)
 
 Two independent layers:

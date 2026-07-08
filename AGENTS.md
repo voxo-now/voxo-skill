@@ -6,12 +6,8 @@ Guidance for AI agents (OpenAI/Codex, Cursor, and any AGENTS.md-aware tool) work
 
 ## Connect
 
-- **MCP (preferred):** streamable-http endpoint `https://speech-mcp.mvpro.lt/mcp/` with header
-  `Authorization: Bearer $VOXO_API_KEY`. Exposes all VOXO tools (`create_generation_job`,
-  `list_voices`, `transcribe_audio`, `clone_voice`, …).
-- **REST:** base `https://speech-api.mvpro.lt`, same `Authorization: Bearer` header. The bundled
-  scripts in `skills/voxo/scripts/` (`tts.py`, `clone_and_speak.py`, `transcribe.py`) wrap it and
-  need only Python 3 (stdlib).
+- **MCP (preferred):** streamable-http endpoint `https://speech-mcp.mvpro.lt/mcp/` with header `Authorization: Bearer $VOXO_API_KEY`. Exposes VOXO tools such as `create_generation_job`, `list_voices`, `transcribe_audio`, `clone_voice`, and more.
+- **REST:** base `https://speech-api.mvpro.lt`, same `Authorization: Bearer $VOXO_API_KEY` header. The bundled scripts in `skills/voxo/scripts/` (`tts.py`, `clone_and_speak.py`, `transcribe.py`) wrap it and need only Python 3 (stdlib).
 
 Get a key from the VOXO dashboard → **API & MCP**. Set `export VOXO_API_KEY="amk_live_…"`.
 

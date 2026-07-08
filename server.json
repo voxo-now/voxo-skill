@@ -1,7 +1,7 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "now.voxo/voxo",
-  "description": "Text-to-speech, voice cloning, multi-speaker dialogue, and transcription across 100+ languages, through one API key.",
+  "description": "Text-to-speech, voice cloning, dialogue, and transcription across 100+ languages, via VOXO.",
   "version": "1.0.0",
   "repository": {
     "url": "https://github.com/voxo-now/voxo-skill",

@@ -16,8 +16,9 @@ builds multi-speaker dialogues, and transcribes audio. Everything runs through *
 key** and a **credit** balance. There are two equivalent ways to call it — use whichever
 is available:
 
-- **MCP tools** (preferred when a VOXO MCP server is connected). Tool names below are shown
-  fully-qualified as `VOXO:tool_name`.
+- **MCP tools** (preferred when a VOXO MCP server is connected). Shown fully-qualified below as
+  `VOXO:tool_name`; some clients namespace differently — use whatever your client lists (the
+  underlying tool is e.g. `create_generation_job`).
 - **REST via the bundled scripts** in `scripts/` (no MCP needed — just `python3` + a key).
 
 ## Setup
@@ -44,6 +45,16 @@ MCP endpoint (streamable-http): `https://speech-mcp.mvpro.lt/mcp/` with header
 - **Limits:** ≤ 5000 chars per TTS job, ≤ 40 dialogue turns, ≤ 5 active jobs at once.
 - **Idempotency:** creating a job takes an `Idempotency-Key` — the scripts send one; if you
   call REST directly, send a fresh UUID so retries don't double-charge.
+
+## Preflight (do this first)
+
+Before any **paid** job — especially long text or batches — verify, don't guess:
+1. `VOXO:get_account` — active account, enough **credits**, email **verified**.
+2. `VOXO:get_capabilities` — available languages, voices, and control tokens.
+3. `VOXO:list_voices` — pick a `voice_id`.
+4. `VOXO:estimate_generation(text, voice_id, language)` — show the user the **cost** first.
+
+Don't fire `create_generation_job` blind on long/expensive input.
 
 ## Workflow 1 — Text to speech (single voice)
 

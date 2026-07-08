@@ -14,7 +14,8 @@ KEY = os.environ.get("VOXO_API_KEY")
 def req(method, path, body=None, headers=None):
     url = path if path.startswith("http") else API + path
     data = json.dumps(body).encode() if body is not None else None
-    h = {"Authorization": f"Bearer {KEY}", "Content-Type": "application/json"}
+    auth = KEY if (KEY or "").lower().startswith("bearer ") else f"Bearer {KEY}"
+    h = {"Authorization": auth, "Content-Type": "application/json"}
     if headers:
         h.update(headers)
     r = urllib.request.Request(url, data=data, headers=h, method=method)

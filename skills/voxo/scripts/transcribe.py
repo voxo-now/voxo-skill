@@ -36,7 +36,7 @@ def main():
     ap.add_argument("--json", action="store_true", help="print the full job JSON")
     a = ap.parse_args()
     if not KEY:
-        sys.exit("set VOXO_API_KEY (dashboard → Developers)")
+        sys.exit("set VOXO_API_KEY (dashboard → API & MCP)")
 
     ext = a.audio.rsplit(".", 1)[-1].lower()
     with open(a.audio, "rb") as f:

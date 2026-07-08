@@ -13,7 +13,7 @@ Guidance for AI agents (OpenAI/Codex, Cursor, and any AGENTS.md-aware tool) work
   scripts in `skills/voxo/scripts/` (`tts.py`, `clone_and_speak.py`, `transcribe.py`) wrap it and
   need only Python 3 (stdlib).
 
-Get a key from the VOXO dashboard → **Developers**. Set `export VOXO_API_KEY="amk_live_…"`.
+Get a key from the VOXO dashboard → **API & MCP**. Set `export VOXO_API_KEY="amk_live_…"`.
 
 ## Rules that matter
 
@@ -34,4 +34,4 @@ Get a key from the VOXO dashboard → **Developers**. Set `export VOXO_API_KEY="
 ## Deeper guidance
 
 The full workflows, control catalog, voice list, and language codes live in the Agent Skill at
-[`skills/voxo/SKILL.md`](skills/voxo/SKILL.md) and its `references/`. Docs: https://voxo.now/docs
+[`skills/voxo/SKILL.md`](skills/voxo/SKILL.md) and its `references/`. Docs: https://speech-app.mvpro.lt/docs

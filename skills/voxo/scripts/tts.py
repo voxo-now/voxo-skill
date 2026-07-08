@@ -49,7 +49,7 @@ def main():
     ap.add_argument("--out", default="out.wav")
     a = ap.parse_args()
     if not KEY:
-        sys.exit("set VOXO_API_KEY (dashboard → Developers)")
+        sys.exit("set VOXO_API_KEY (dashboard → API & MCP)")
 
     controls = {}
     if a.emotion:

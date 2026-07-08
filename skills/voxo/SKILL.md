@@ -6,7 +6,7 @@ compatibility: Needs network access to the VOXO API and a VOXO_API_KEY. Bundled 
 metadata:
   author: VOXO
   version: "1.0"
-  homepage: https://voxo.now
+  homepage: https://speech-app.mvpro.lt
 ---
 
 # VOXO — speech for agents
@@ -25,7 +25,7 @@ is available:
 Set the API key once in the environment (both paths read it):
 
 ```bash
-export VOXO_API_KEY="amk_live_…"          # from the VOXO dashboard → Developers
+export VOXO_API_KEY="amk_live_…"          # from the VOXO dashboard → API & MCP
 export VOXO_API_URL="https://speech-api.mvpro.lt"   # optional; this is the default
 ```
 

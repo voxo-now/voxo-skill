@@ -48,7 +48,7 @@ def main():
     ap.add_argument("--out", default="out.wav")
     a = ap.parse_args()
     if not KEY:
-        sys.exit("set VOXO_API_KEY (dashboard → Developers)")
+        sys.exit("set VOXO_API_KEY (dashboard → API & MCP)")
 
     ext = a.reference_audio.rsplit(".", 1)[-1].lower()
     with open(a.reference_audio, "rb") as f:

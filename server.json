@@ -14,7 +14,7 @@
       "headers": [
         {
           "name": "Authorization",
-          "description": "Bearer <your VOXO API key from the dashboard → Developers>",
+          "description": "Bearer <your VOXO API key from the dashboard → API & MCP>",
           "isRequired": true,
           "isSecret": true
         }

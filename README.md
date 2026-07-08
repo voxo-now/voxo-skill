@@ -1,6 +1,6 @@
 # VOXO — agent integration kit
 
-Everything an AI agent needs to use **[VOXO](https://voxo.now)** — text-to-speech, voice
+Everything an AI agent needs to use **[VOXO](https://speech-app.mvpro.lt)** — text-to-speech, voice
 cloning, multi-speaker dialogue, and transcription across 100+ languages — through one API key.
 
 This repo is intentionally **not** a bespoke agent. It ships portable, standard artifacts so
@@ -14,7 +14,7 @@ This repo is intentionally **not** a bespoke agent. It ships portable, standard 
 
 ## Quick start
 
-1. Get an API key: VOXO dashboard → **Developers**.
+1. Get an API key: VOXO dashboard → **API & MCP**.
 2. `export VOXO_API_KEY="amk_live_…"`
 3. Use it one of these ways:
 
@@ -44,7 +44,7 @@ python3 skills/voxo/scripts/clone_and_speak.py sample.wav "Read this in my voice
 
 ## Links
 
-- Docs: https://voxo.now/docs · API base: `https://speech-api.mvpro.lt` · MCP: `https://speech-mcp.mvpro.lt/mcp/`
+- Docs: https://speech-app.mvpro.lt/docs · API base: `https://speech-api.mvpro.lt` · MCP: `https://speech-mcp.mvpro.lt/mcp/`
 
 ## License
 

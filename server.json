@@ -1,0 +1,24 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "now.voxo/voxo",
+  "description": "Text-to-speech, voice cloning, multi-speaker dialogue, and transcription across 100+ languages, through one API key.",
+  "version": "1.0.0",
+  "repository": {
+    "url": "https://github.com/voxo-now/voxo-skill",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://speech-mcp.mvpro.lt/mcp/",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer <your VOXO API key from the dashboard → Developers>",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
